@@ -7,7 +7,7 @@
 }
 
 .container{
-    width: 1200px;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -15,6 +15,14 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+}
+
+.nav>button{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background: transparent;
+    display: none;
 }
 
 .nav-list{
@@ -28,4 +36,36 @@
 
 .logo{
     font-size: 35px;
+}
+
+
+
+@media only screen and (max-width:992px){
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+@media only screen and (max-width:768px){
+
+    .container{
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav>button{
+        display: inline-block;
+    }
+
+
+
 }
